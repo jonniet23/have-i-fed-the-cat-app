@@ -6,6 +6,9 @@ const app = express();
 // so we need the JSON middleware
 app.use(express.json());
 
-// we will put our routes and controller functions here
+app.post('/cats', (req, res) => {
+    
+   return res.status(201).json()
+  });
 
 module.exports = app;
